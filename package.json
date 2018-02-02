@@ -10,7 +10,8 @@
   "author": "lsong",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.11.0",
+    "kelp": "^1.0.5",
+    "kelp-body": "^1.4.1",
     "qr-image": "^3.0.2"
   },
   "devDependencies": {},

@@ -1,11 +1,15 @@
-var express = require('express');
-var qr      = require('qr-image');
+const http = require('http');
+const kelp = require('kelp');
+const body = require('kelp-body');
+const qr   = require('qr-image');
 
-var app = express();
+const app = kelp();
 
-app.get('/',function(req, res){
-  res.set('Content-Type', 'image/png');
-  qr.image(req.query.text, { type: 'png' }).pipe(res);
+app.use(body);
+app.use((req, res) => {
+  const { text = '' } = req.query;
+  res.setHeader('Content-Type', 'image/png');
+  qr.image(text, { type: 'png' }).pipe(res);
 });
 
-module.exports = app;
+http.createServer(app).listen(9000);

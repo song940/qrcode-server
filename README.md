@@ -1,81 +1,12 @@
-## qrcode ![npm](https://badge.fury.io/js/qrcode.png)
+## qrcode-server
 
 qrcode server
 
 ### Installation
 ````
-$ [sudo] npm install qrcode
+$ npm i
+$ npm start
 ````
-
-
-### Example
-````javascript
-var qrcode = require('qrcode');
-````
-
-### API
-
-- qrcode.init()
-- qrcode.defaultConfiguration()
-- qrcode.lazyrouter()
-- qrcode.handle()
-- qrcode.use()
-- qrcode.route()
-- qrcode.engine()
-- qrcode.param()
-- qrcode.set()
-- qrcode.path()
-- qrcode.enabled()
-- qrcode.disabled()
-- qrcode.enable()
-- qrcode.disable()
-- qrcode.get()
-- qrcode.post()
-- qrcode.put()
-- qrcode.head()
-- qrcode.delete()
-- qrcode.options()
-- qrcode.trace()
-- qrcode.copy()
-- qrcode.lock()
-- qrcode.mkcol()
-- qrcode.move()
-- qrcode.purge()
-- qrcode.propfind()
-- qrcode.proppatch()
-- qrcode.unlock()
-- qrcode.report()
-- qrcode.mkactivity()
-- qrcode.checkout()
-- qrcode.merge()
-- qrcode.m-search()
-- qrcode.notify()
-- qrcode.subscribe()
-- qrcode.unsubscribe()
-- qrcode.patch()
-- qrcode.search()
-- qrcode.connect()
-- qrcode.all()
-- qrcode.del()
-- qrcode.render()
-- qrcode.listen()
-- qrcode.setMaxListeners()
-- qrcode.emit()
-- qrcode.addListener()
-- qrcode.on()
-- qrcode.once()
-- qrcode.removeListener()
-- qrcode.removeAllListeners()
-- qrcode.listeners()
-- qrcode.request()
-- qrcode.response()
-- qrcode.cache()
-- qrcode.settings()
-- qrcode.engines()
-- qrcode._events()
-- qrcode.locals()
-- qrcode.mountpath()
-- qrcode._router()
 
 ### Contributing
 - Fork this repo
@@ -108,5 +39,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ---
-![docor](https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/doctor.png)
-built upon love by [docor](https://github.com/turingou/docor.git) v0.1.3
